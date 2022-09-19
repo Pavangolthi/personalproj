@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="springbootmessage"/>
+<aop-project name="springbootapp"/>
+<aop-project name="customer-service"/>
+<aop-project name="eurekaproj"/>
+<aop-project name="springbootsecurity"/>
+<aop-project name="localbasket"/>
+<aop-project name="springjdbcproj"/>
+<aop-project name="custjdbcproj"/>
+<aop-project name="springbootrestclien"/>
+<aop-project name="springuserproj">
+<aspect-definition advice-class-name="com.user.myapp.aop.LogAspect" advice-method-name="logMethod(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="32" aspect-name="logAspect" aspect-start-line-number="32" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/springuserproj/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" pointcut-expression="execution(public * com.user.myapp.api.*.*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:springuserproj|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|7:beans:beans:10|8:userRestController:10" bean-file="/springuserproj/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" bean-start-line="10" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springuserproj/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=springuserproj/src\/main\/java&lt;com.user.myapp.aop{LogAspect.java[LogAspect~logMethod~QProceedingJoinPoint;" source-start-line="30" target="=springuserproj/src\/main\/java&lt;com.user.myapp.api{UserRestController.java[UserRestController~findById~I" target-start-line="20"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="customer-service-client"/>
+<aop-project name="sprinproj"/>
+<aop-project name="app"/>
+<aop-project name="springbootreceiver"/>
+<aop-project name="springmvcproj">
+<aspect-definition advice-class-name="com.mtc.app.aspect.LogAspect" advice-method-name="logMethod(org.aspectj.lang.JoinPoint, java.sql.SQLException)" advice-type="AFTER_THROWING" aspect-end-line-number="18" aspect-name="logAspect" aspect-start-line-number="18" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/springmvcproj/src/main/java/com/mtc/app/aspect/LogAspect.java" pointcut-expression="execution(public * com.mtc.app.api.*.*(..))" proxy-target-class="false" throwing="sqlException">
+<aop-reference advice-type="AFTER_THROWING" bean="1:BeansModel|2:springmvcproj|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|8:productRestController:21" bean-file="/springmvcproj/src/main/java/com/mtc/app/api/ProductRestController.java" bean-start-line="21" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvcproj/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=springmvcproj/src\/main\/java&lt;com.mtc.app.aspect{LogAspect.java[LogAspect~logMethod~QJoinPoint;~QSQLException;" source-start-line="23" target="=springmvcproj/src\/main\/java&lt;com.mtc.app.api{ProductRestController.java[ProductRestController~addProduct~QProduct;" target-start-line="42"/>
+<aop-reference advice-type="AFTER_THROWING" bean="1:BeansModel|2:springmvcproj|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|8:productRestController:21" bean-file="/springmvcproj/src/main/java/com/mtc/app/api/ProductRestController.java" bean-start-line="21" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvcproj/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=springmvcproj/src\/main\/java&lt;com.mtc.app.aspect{LogAspect.java[LogAspect~logMethod~QJoinPoint;~QSQLException;" source-start-line="23" target="=springmvcproj/src\/main\/java&lt;com.mtc.app.api{ProductRestController.java[ProductRestController~updateProduct~QProduct;" target-start-line="48"/>
+<aop-reference advice-type="AFTER_THROWING" bean="1:BeansModel|2:springmvcproj|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|8:productRestController:21" bean-file="/springmvcproj/src/main/java/com/mtc/app/api/ProductRestController.java" bean-start-line="21" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvcproj/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=springmvcproj/src\/main\/java&lt;com.mtc.app.aspect{LogAspect.java[LogAspect~logMethod~QJoinPoint;~QSQLException;" source-start-line="23" target="=springmvcproj/src\/main\/java&lt;com.mtc.app.api{ProductRestController.java[ProductRestController~findById~I" target-start-line="30"/>
+<aop-reference advice-type="AFTER_THROWING" bean="1:BeansModel|2:springmvcproj|3:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml|8:productRestController:21" bean-file="/springmvcproj/src/main/java/com/mtc/app/api/ProductRestController.java" bean-start-line="21" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/springmvcproj/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" source="=springmvcproj/src\/main\/java&lt;com.mtc.app.aspect{LogAspect.java[LogAspect~logMethod~QJoinPoint;~QSQLException;" source-start-line="23" target="=springmvcproj/src\/main\/java&lt;com.mtc.app.api{ProductRestController.java[ProductRestController~deleteProduct~I" target-start-line="54"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="springboot-mybatis"/>
+</aop-reference-model>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;IProductDAO.java&apos; to &apos;springjdbcproj/src/main/java/com.jdbc.app.dao&apos;&#x0D;&#x0A;- Original project: &apos;testwebproj&apos;&#x0D;&#x0A;- Destination element: &apos;springjdbcproj/src/main/java/com.jdbc.app.dao&apos;&#x0D;&#x0A;- Original element: &apos;com.mtc.app.dao.IProductDAO.java&apos;" description="Copy compilation unit" destination="=springjdbcproj/src\/main\/java&lt;com.jdbc.app.dao" element1="/src&lt;com.mtc.app.dao{IProductDAO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1607039249533" units="1" version="1.0"/>
+</session>

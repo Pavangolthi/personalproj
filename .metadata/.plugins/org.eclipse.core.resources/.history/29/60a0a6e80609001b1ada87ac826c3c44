@@ -1,0 +1,12 @@
+package exceptionproj;
+
+import java.sql.Connection;
+
+public class TestChecked {
+
+	public static void main(String[] args) {
+		
+		Connection connection = 
+	}
+
+}

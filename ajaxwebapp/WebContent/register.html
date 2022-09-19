@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var xmlhttp;
+	function processField(uname){
+		var username = uname.value;
+		alert(username)
+		//Creating xmlhttp request object
+		xmlhttp = new XMLHttpRequest();
+		
+		//register callback function
+		xmlhttp.onreadystatechange = processResponse;
+		
+		//add request info
+		xmlhttp.open("GET","usernameserv?username="+username,true);
+		
+		//send the request to the server
+		xmlhttp.send();
+	}
+	
+		function processResponse(){
+			if(xmlhttp.status == 200 && xmlhttp.readyState == 4){
+				alert(xmlhttp.readyState);
+				document.getElementById("uname").innerHTML = xmlhttp.responseText;
+			}
+		}
+</script>
+</head>
+<body>
+	<h2 align="center">Register Page</h2>
+	<div align="center">
+		<form action = "usernameserv">
+			<table>
+				<tr>
+				<td><label>User name</label></td>
+				<td><input id = "uname" onchange= "processField(this)" type="text" name="username"/></td>
+				</tr>
+				<tr>
+				<td><label>Password</label></td>
+				<td><input type="password" name="password"/></td>
+				</tr>
+				<tr>
+				<td><label>Confirm Password</label></td>
+				<td><input type="password" name="confirmpassword"/></td>
+				</tr>
+				<tr>
+				<td><label>First name</label></td>
+				<td><input type="text" name="firstname"/></td>
+				</tr>
+				<tr>
+				<td><label>Last name</label></td>
+				<td><input type="text" name="lastname"/></td>
+				</tr>
+				<tr>
+				<td><label>City</label></td>
+				<td><input type="text" name="city"/></td>
+				</tr>
+				<tr>
+				<td><label>Email</label></td>
+				<td><input type="text" name="email"/></td>
+				</tr>
+				<tr>
+				<td><input type ="submit" value="REGISTER"/></td>
+				</tr>
+			</table>	
+		
+		</form>	
+	</div>
+
+</body>
+</html>

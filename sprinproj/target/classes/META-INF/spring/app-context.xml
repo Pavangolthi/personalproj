@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<description>Example configuration to get you started.</description>
+
+	<context:component-scan base-package="com.mtc.app" />
+	
+	<bean id= "fileMessageProvider" class="com.mtc.app.provider.FileMessageProvider" primary="true"></bean>
+	
+	<bean id= "messageProvider" class="com.mtc.app.provider.DBMessageProvider"></bean>
+	
+	<bean id="messageprinter" class="com.mtc.app.printer.MessagePrinter" autowire="byType"></bean>
+	
+ 	<!-- <bean id="messagePrinter" class="com.mtc.app.printer.MessagePrinter">
+		<property name="messageProvider" ref="fileMessageProvider"></property>
+	</bean>  -->
+	
+	<!-- Constructor Dependency Injection -->
+	<!-- <bean id="messagePrinter" class="com.mtc.app.printer.MessagePrinter">
+		<constructor-arg ref="dbMessageProvider"></constructor-arg>
+	</bean> -->
+
+</beans>
